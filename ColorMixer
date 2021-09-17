@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace ColorMixer
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const string red = "red";
+            const string blue = "blue";
+            const string yellow = "yellow";
+            const string color1 = red;
+            const string color2 = blue;
+            const string color3 = yellow;
+
+            Console.WriteLine($"{color1} + {color2} = ");
+            if (color1 == red && color2 == blue)
+            {
+                Console.WriteLine("purple");
+            }
+            Console.WriteLine($"{color1} + {color3} = ");
+            if (color1 == red && color3 == yellow)
+            {
+                Console.WriteLine("orange");
+            }
+            Console.WriteLine($"{color3} + {color2}");
+            if (color3 == yellow && color2 == blue)
+            {
+                Console.WriteLine("green");
+            }
+        }
+    }
+}
