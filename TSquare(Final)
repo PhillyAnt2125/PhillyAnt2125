@@ -1,0 +1,225 @@
+﻿using System;
+
+namespace TSquared
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double subSmall = 2.00;
+            double subMedium = 4.00;
+            double subLarge = 6.00;
+            double subHot = 1.00;
+            double lettuce = 0.10;
+            double onion = 0.10;
+            double sweetPeppers = 0.10;
+            double hotPeppers = 0.10;
+            double tomatoes = 0.10;
+            double meatSmall = 1.00;
+            double meatMedium = 2.00;
+            double meatLarge = 3.00;
+            double roastBeef = 0;
+            double turkey = 0;
+            double ham = 0;
+            double tuna = 0;
+            double chicken = 0;
+            double cheeseSmall = 1.00;
+            double cheeseMedium = 2.00;
+            double cheeseLarge = 3.00;
+            double provolone = 0;
+            double swiss = 0;
+            double american = 0;
+            double chedder = 0;
+            double muenster = 0;
+            double tax = 0.08;
+            double subtotal = 0;
+
+
+            Console.Write("What sub size would you like? (Small/Medium?Large)");
+            string subSize = Console.ReadLine();
+            if (subSize == "Small" || subSize == "Medium" || subSize == "Large")
+            {
+                if (subSize == "small")
+                {
+                    subtotal += subSmall;
+                }
+                else if (subSize == "medium")
+                {
+                    subtotal += subMedium;
+                }
+                else if (subSize == "large")
+                {
+                    subtotal += subLarge;
+                }
+
+                Console.Write("Toasted Roll/Hot Sub: ");
+                string toastedOrHot = Console.ReadLine();
+                if (toastedOrHot == "Toasted Roll" || toastedOrHot == "Hot Sub")
+                {
+                    subtotal += subHot;
+                }
+                Console.WriteLine("Vegetables: ");
+                Console.Write("Do you want lettuce? ");
+                string input = Console.ReadLine();
+                if (input == "yes")
+                {
+                    subtotal += lettuce;
+                    Console.WriteLine("lettuce added");
+                }
+                Console.Write("Do you want onion? ");
+                input = Console.ReadLine();
+                if (input == "yes")
+                {
+                    subtotal += onion;
+                    Console.WriteLine("onion added");
+                }
+                Console.Write("Do you want Sweet Peppers? ");
+                input = Console.ReadLine();
+                if (input == "yes")
+                {
+                    subtotal += sweetPeppers;
+                    Console.WriteLine("sweet peppers added");
+                }
+                Console.Write("Do you want hot peppers? ");
+                input = Console.ReadLine();
+                if (input == "yes")
+                {
+                    subtotal += hotPeppers;
+                    Console.WriteLine("hot peppers added");
+                }
+                Console.Write("Do you want tomatoes? ");
+                input = Console.ReadLine();
+                if (input == "yes")
+                {
+                    subtotal += tomatoes;
+                    Console.WriteLine("tomatoes added");
+                }
+
+                Console.Write("What size of meat would you like? (Small/Medium?Large)");
+                string meatSize = Console.ReadLine();
+                if (meatSize == "Small" || meatSize == "Medium" || meatSize == "Large")
+                {
+                    if (meatSize == "Small")
+                    {
+                        subtotal += meatSmall;
+                    }
+                    else if (meatSize == "Medium")
+                    {
+                        subtotal += meatMedium;
+                    }
+                    else if (meatSize == "Large")
+                    {
+                        subtotal += meatLarge;
+                    }
+
+                    Console.WriteLine("Meat: ");
+                    Console.Write("Do you want roast beef? ");
+                    string meat = Console.ReadLine();
+                    if (meat == "yes")
+                    {
+                        subtotal += roastBeef;
+                        Console.WriteLine("roast beef added");
+                    }
+                    Console.Write("Do you want turkey? ");
+                    meat = Console.ReadLine();
+                    if (meat == "yes")
+                    {
+                        subtotal += turkey;
+                        Console.WriteLine("turkey added");
+                    }
+                    Console.Write("Do you want ham? ");
+                    meat = Console.ReadLine();
+                    if (meat == "yes")
+                    {
+                        subtotal += ham;
+                        Console.WriteLine("ham added");
+                    }
+                    Console.Write("Do you want tuna? ");
+                    meat = Console.ReadLine();
+                    if (meat == "yes")
+                    {
+                        subtotal += tuna;
+                        Console.WriteLine("tuna added");
+                    }
+                    Console.Write("Do you want chicken? ");
+                    meat = Console.ReadLine();
+                    if (meat == "yes")
+                    {
+                        subtotal += chicken;
+                        Console.WriteLine("chicken added");
+                    }
+
+                    Console.Write("What size of cheese would you like? (Small/Medium?Large)");
+                    string cheeseSize = Console.ReadLine();
+                    if (cheeseSize == "Small" || cheeseSize == "Medium" || cheeseSize == "Large")
+                    {
+                        if (cheeseSize == "Small")
+                        {
+                            subtotal += cheeseSmall;
+                        }
+                        else if (cheeseSize == "Medium")
+                        {
+                            subtotal += cheeseMedium;
+                        }
+                        else if (cheeseSize == "Large")
+                        {
+                            subtotal += cheeseLarge;
+                        }
+
+                        Console.WriteLine("Cheese: ");
+                        Console.Write("Do you want provolone? ");
+                        string cheese = Console.ReadLine();
+                        if (cheese == "yes")
+                        {
+                            subtotal += provolone;
+                            Console.WriteLine("provolone added");
+                        }
+                        Console.Write("Do you want swiss? ");
+                        cheese = Console.ReadLine();
+                        if (cheese == "yes")
+                        {
+                            subtotal += swiss;
+                            Console.WriteLine("swiss added");
+                        }
+                        Console.Write("Do you want american? ");
+                        cheese = Console.ReadLine();
+                        if (cheese == "yes")
+                        {
+                            subtotal += american;
+                            Console.WriteLine("american added");
+                        }
+                        Console.Write("Do you want chedder? ");
+                        cheese = Console.ReadLine();
+                        if (cheese == "yes")
+                        {
+                            subtotal += chedder;
+                            Console.WriteLine("chedder added");
+                        }
+                        Console.Write("Do you want muenster? ");
+                        cheese = Console.ReadLine();
+                        if (cheese == "yes")
+                        {
+                            subtotal += muenster;
+                            Console.WriteLine("muenster added");
+                        }
+                        Console.WriteLine("*****RECEIPT*****");
+                        Console.WriteLine("T Square Sub Shop");
+                        Console.WriteLine($"Sub Size: {subSize:c}");
+                        Console.WriteLine($"Toasted or hot sub: {subHot:c}");
+                        Console.WriteLine($"Vegetables selected: {lettuce:c} + {onion:c} + {sweetPeppers:c} + {hotPeppers:c} + {tomatoes:c}");
+                        Console.WriteLine($"Meat size: {meatSize:c}");
+                        Console.WriteLine($"Meats slected: {roastBeef:c} + {turkey:c} + {ham:c} + {tuna:c} + {chicken:c}");
+                        Console.WriteLine($"Cheese Size: {cheeseSize:c}");
+                        Console.WriteLine($"Cheese slected: {provolone:c} + {swiss:c} + {american:c} + {chedder:c} + {muenster:c}");
+                        Console.WriteLine($"Subtotal: {subtotal:c}");
+                        Console.WriteLine($"Tax: {tax:c}");
+                        double total = (subtotal + (subtotal * tax));
+                        Console.WriteLine($"total: {total:c}");
+
+                    }
+                }
+            }
+
+        }
+    }
+}
